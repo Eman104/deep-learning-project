@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="static/style.css" rel="stylesheet">
+    </head>
+    <body>    
+        <center class="eman">
+            <div class='cont'>
+                <h2>WELCOME<br> To Image Classification</h2>
+                <p>This app to classify images to one of  {buildings , forest , glacier , mountain , sea , street } </p>
+            </div>
+            
+
+        <form method="POST" action="{{url_for('home')}}" enctype="multipart/form-data">
+            <input type="file" name='image' class='btn'><br><br><br>
+            <input type="submit" class='btn'>
+        </form>
+
+    </center>
+
+    </body>
+</html>
